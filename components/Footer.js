@@ -4,8 +4,9 @@ import SocialIcon from '@/components/social-icons'
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="mt-20 mb-8 flex flex-col md:flex-row md:items-center md:justify-between">
+    <footer className="divide-y divide-gray-200 dark:divide-gray-700 ">
+      <div className=""></div>
+      <div className="mt-20 mb-8 flex flex-col pt-4 md:flex-row md:items-center md:justify-between">
         <div className="text-md mb-8 text-gray-500 dark:text-gray-400 md:mb-0">
           <Link href="https://Fanbaseai.com">
             Copyright © 2023 Fanbaseai, Inc. All rights reserved.

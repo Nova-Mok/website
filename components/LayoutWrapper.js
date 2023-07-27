@@ -8,6 +8,8 @@ import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
+  const underlineButtons = ['We are hiring!', 'Be our fan']
+
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
@@ -28,13 +30,17 @@ const LayoutWrapper = ({ children }) => {
               </div>
             </Link>
           </div>
-          <div className="flex items-center text-base leading-5 ">
-            <div className="hidden space-x-4 sm:block ">
+          <div className="flex items-center text-base leading-5">
+            <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="rounded-md bg-black text-sm text-white sm:p-2"
+                  className={`p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4 ${
+                    link.title === 'Blog'
+                      ? 'rounded-md bg-black text-sm font-medium text-white sm:p-3'
+                      : 'bg-transparent'
+                  } ${underlineButtons.includes(link.title) ? 'underline' : ''}`}
                 >
                   {link.title}
                 </Link>
