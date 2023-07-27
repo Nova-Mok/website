@@ -9,7 +9,7 @@ const siteMetadata = {
   siteRepo: '',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/logo.png',
   email: 'founders@fanbaseai.com',
   github: 'https://github.com',
   twitter: 'https://twitter.com/fanbaseAIdotcom',
