@@ -1,8 +1,7 @@
 const headerNavLinks = [
   { href: '/blog', title: 'Blog' },
-  { href: '/tags', title: 'Tags' },
-  { href: '/projects', title: 'Projects' },
-  { href: '/about', title: 'About' },
+  { href: 'http://surl.li/jmrik', title: 'We are hiring!' },
+  { href: 'https://tally.so/r/nrD0e2', title: 'Be our fan' },
 ]
 
 export default headerNavLinks
